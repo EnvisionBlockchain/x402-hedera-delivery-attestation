@@ -1,0 +1,60 @@
+{
+  "engine": "higgsfield elevenlabs voice=b57b22a0",
+  "segments": [
+    {
+      "id": "01-hook",
+      "narration": 16.4,
+      "hold": 17.1
+    },
+    {
+      "id": "02-gap",
+      "narration": 16.56,
+      "hold": 17.26
+    },
+    {
+      "id": "02b-what-is-sold",
+      "narration": 27.92,
+      "hold": 28.62
+    },
+    {
+      "id": "03-demo",
+      "narration": 38.72,
+      "hold": 39.42
+    },
+    {
+      "id": "04-why-identity",
+      "narration": 37.12,
+      "hold": 37.82
+    },
+    {
+      "id": "05-code",
+      "narration": 26.56,
+      "hold": 27.26
+    },
+    {
+      "id": "06-repo",
+      "narration": 30.72,
+      "hold": 31.42
+    },
+    {
+      "id": "07-build",
+      "narration": 23.92,
+      "hold": 24.62
+    },
+    {
+      "id": "08-agent",
+      "narration": 26.16,
+      "hold": 26.86
+    },
+    {
+      "id": "09-verify",
+      "narration": 29.2,
+      "hold": 29.9
+    },
+    {
+      "id": "10-close",
+      "narration": 17.84,
+      "hold": 18.54
+    }
+  ]
+}

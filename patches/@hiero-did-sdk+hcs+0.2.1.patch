@@ -1,0 +1,52 @@
+diff --git a/node_modules/@hiero-did-sdk/hcs/dist/browser/index.cjs b/node_modules/@hiero-did-sdk/hcs/dist/browser/index.cjs
+index c1563c5..fa53a2a 100644
+--- a/node_modules/@hiero-did-sdk/hcs/dist/browser/index.cjs
++++ b/node_modules/@hiero-did-sdk/hcs/dist/browser/index.cjs
+@@ -31,7 +31,7 @@ let _hiero_did_sdk_cache = require("@hiero-did-sdk/cache");
+ let _hiero_did_sdk_crypto = require("@hiero-did-sdk/crypto");
+ let _hiero_did_sdk_zstd = require("@hiero-did-sdk/zstd");
+ let _hiero_ledger_sdk = require("@hiero-ledger/sdk");
+-let _hiero_ledger_sdk_lib_client_NodeClient = require("@hiero-ledger/sdk/lib/client/NodeClient");
++let _hiero_ledger_sdk_lib_client_NodeClient = require('@hiero-ledger/sdk').Client;
+ _hiero_ledger_sdk_lib_client_NodeClient = __toESM(_hiero_ledger_sdk_lib_client_NodeClient);
+ let buffer = require("buffer");
+ 
+diff --git a/node_modules/@hiero-did-sdk/hcs/dist/browser/index.mjs b/node_modules/@hiero-did-sdk/hcs/dist/browser/index.mjs
+index 68f6d35..5b08945 100644
+--- a/node_modules/@hiero-did-sdk/hcs/dist/browser/index.mjs
++++ b/node_modules/@hiero-did-sdk/hcs/dist/browser/index.mjs
+@@ -3,7 +3,7 @@ import { LRUMemoryCache } from "@hiero-did-sdk/cache";
+ import { Crypto } from "@hiero-did-sdk/crypto";
+ import { Zstd } from "@hiero-did-sdk/zstd";
+ import { PrivateKey, Status, StatusError, Timestamp, TopicCreateTransaction, TopicDeleteTransaction, TopicId, TopicInfoQuery, TopicMessageQuery, TopicMessageSubmitTransaction, TopicUpdateTransaction } from "@hiero-ledger/sdk";
+-import NodeClient from "@hiero-ledger/sdk/lib/client/NodeClient";
++import { Client as NodeClient } from '@hiero-ledger/sdk';
+ import { Buffer } from "buffer";
+ 
+ //#region src/cache/hcs-cache-service.ts
+diff --git a/node_modules/@hiero-did-sdk/hcs/dist/index.cjs b/node_modules/@hiero-did-sdk/hcs/dist/index.cjs
+index f6327ad..3752e5e 100644
+--- a/node_modules/@hiero-did-sdk/hcs/dist/index.cjs
++++ b/node_modules/@hiero-did-sdk/hcs/dist/index.cjs
+@@ -31,7 +31,7 @@ let _hiero_did_sdk_cache = require("@hiero-did-sdk/cache");
+ let _hiero_did_sdk_crypto = require("@hiero-did-sdk/crypto");
+ let _hiero_did_sdk_zstd = require("@hiero-did-sdk/zstd");
+ let _hiero_ledger_sdk = require("@hiero-ledger/sdk");
+-let _hiero_ledger_sdk_lib_client_NodeClient = require("@hiero-ledger/sdk/lib/client/NodeClient");
++let _hiero_ledger_sdk_lib_client_NodeClient = require('@hiero-ledger/sdk').Client;
+ _hiero_ledger_sdk_lib_client_NodeClient = __toESM(_hiero_ledger_sdk_lib_client_NodeClient);
+ let buffer = require("buffer");
+ 
+diff --git a/node_modules/@hiero-did-sdk/hcs/dist/index.mjs b/node_modules/@hiero-did-sdk/hcs/dist/index.mjs
+index 181cade..bc96d84 100644
+--- a/node_modules/@hiero-did-sdk/hcs/dist/index.mjs
++++ b/node_modules/@hiero-did-sdk/hcs/dist/index.mjs
+@@ -3,7 +3,7 @@ import { LRUMemoryCache } from "@hiero-did-sdk/cache";
+ import { Crypto } from "@hiero-did-sdk/crypto";
+ import { Zstd } from "@hiero-did-sdk/zstd";
+ import { PrivateKey, Status, StatusError, Timestamp, TopicCreateTransaction, TopicDeleteTransaction, TopicId, TopicInfoQuery, TopicMessageQuery, TopicMessageSubmitTransaction, TopicUpdateTransaction } from "@hiero-ledger/sdk";
+-import NodeClient from "@hiero-ledger/sdk/lib/client/NodeClient";
++import { Client as NodeClient } from '@hiero-ledger/sdk';
+ import { Buffer } from "buffer";
+ 
+ //#region src/cache/hcs-cache-service.ts

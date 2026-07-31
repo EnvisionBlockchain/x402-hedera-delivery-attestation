@@ -1,0 +1,41 @@
+x402 Hedera Delivery Attestation
+Copyright 2026 Envision Blockchain Solutions
+
+This product includes software developed at
+Envision Blockchain Solutions (https://envisionblockchain.com).
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+this file except in compliance with the License. You may obtain a copy of the
+License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Note for anyone redistributing or building on this software: it deliberately
+contains a component that misbehaves. src/seller/dishonest.ts is a mock seller
+that accepts payment and returns fabricated values. It exists so the delivery
+verification can be seen catching it, and it is labelled as a mock in its own
+source header, at startup, and in the README. Do not deploy it as a real service.
+
+This software depends on Apache-2.0 licensed components from the x402 Foundation
+(@x402/core, @x402/hedera) and the Hiero project (@hiero-ledger/sdk).
+
+Payments in this demo settle through Blocky402, an open x402 facilitator
+operated by BlockyDevs (https://blocky402.com, https://github.com/blockydevs).
+Blocky402 is a separate service, not included in or distributed with this
+software, and BlockyDevs neither endorses nor has reviewed this project.
+
+It also reads from the public Hedera mirror node and links to HashScan, both
+operated by third parties and used here as unmodified public services.
+
+viewer/index.html embeds two MIT-licensed cryptography libraries by Paul Miller,
+so that it can verify attestation signatures offline without a build step:
+
+    @noble/ed25519    v3.0.0  Copyright (c) Paul Miller (paulmillr.com)
+                              https://github.com/paulmillr/noble-ed25519
+    @noble/hashes     v2.2.0  Copyright (c) Paul Miller (paulmillr.com)
+                              https://github.com/paulmillr/noble-hashes
+
+Both are redistributed under the MIT License. Their import and export
+statements were stripped and each package wrapped in its own closure so the
+code runs as a classic script from a file:// URL; the cryptographic code
+itself is unmodified. The vendored block is marked as such in the file.

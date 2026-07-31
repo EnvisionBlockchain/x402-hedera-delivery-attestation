@@ -1,0 +1,42 @@
+{
+  "note": "Captured from live Hedera testnet topic 0.0.9857228 on 2026-07-31. Real signed attestations issued by the Hiero DID SDK identity below; do not edit.",
+  "attesterDid": "did:hedera:testnet:FUsRseUzYKD8x5qepSUQXR3YZBQpPCDAnvLkp2LZQ7CE_0.0.9857227",
+  "attesterTopicId": "0.0.9857227",
+  "attesterCreateEvent": "{\"message\":{\"timestamp\":\"2026-07-31T14:01:33.270Z\",\"operation\":\"create\",\"did\":\"did:hedera:testnet:FUsRseUzYKD8x5qepSUQXR3YZBQpPCDAnvLkp2LZQ7CE_0.0.9857227\",\"event\":\"eyJESURPd25lciI6eyJpZCI6ImRpZDpoZWRlcmE6dGVzdG5ldDpGVXNSc2VVellLRDh4NXFlcFNVUVhSM1laQlFwUENEQW52TGtwMkxaUTdDRV8wLjAuOTg1NzIyNyIsInR5cGUiOiJFZDI1NTE5VmVyaWZpY2F0aW9uS2V5MjAyMCIsImNvbnRyb2xsZXIiOiJkaWQ6aGVkZXJhOnRlc3RuZXQ6RlVzUnNlVXpZS0Q4eDVxZXBTVVFYUjNZWkJRcFBDREFudkxrcDJMWlE3Q0VfMC4wLjk4NTcyMjciLCJwdWJsaWNLZXlNdWx0aWJhc2UiOiJ6Nk1rdHc4VVR0alJzcmhjNGFnTVcxU0ZOV2JZTmtnZm81VFhVd0ZnZUpKYUtLeWMifX0=\"},\"signature\":\"reksEvlcbb1btzLoly2rEAAvTsPqd66Laja8OFCkj+vNNnacJ/TvepfA62cc2+5dx6sjZ4EHXSGm/wjxnbCdBQ==\"}",
+  "attestations": [
+    {
+      "record": {
+        "type": "x402.delivery-attestation",
+        "version": "1",
+        "service": "http://127.0.0.1:4021/snapshot?account=0.0.2",
+        "paymentTxId": "0.0.7162784@1785506502.423438830",
+        "sellerDid": "did:hedera:testnet:p5VsJKKhGAWw2xhpduKEypUUHY2Wuxmo1Ujg1qdP836_0.0.9857223",
+        "buyerDid": "did:hedera:testnet:7XbL8uRTrCGStAQBmxSxNJWPfeUskXhDRi1dsBXNMwvt_0.0.9857222",
+        "attesterDid": "did:hedera:testnet:FUsRseUzYKD8x5qepSUQXR3YZBQpPCDAnvLkp2LZQ7CE_0.0.9857227",
+        "delivered": true,
+        "reason": "the resource that was paid for was delivered",
+        "responseSha256": "9b23127f4aeb8128462e361795641da51032347849ef76131c50e6d62c01a25d",
+        "attestedAt": "2026-07-31T14:01:54.036Z"
+      },
+      "signature": "b2b028b59bc238eeeab95f8c743dd7770b6acd59d7cdd2ffc76a5e0c25f5dc419336ad9db7bb2f06429bdd535fa50b933f850e995346baa4985dbf7901f3c50b",
+      "attesterPublicKey": "d72751a31561b245127c1f293f8497cd77037fd34e7fbea80391eed64d09c09b"
+    },
+    {
+      "record": {
+        "type": "x402.delivery-attestation",
+        "version": "1",
+        "service": "http://127.0.0.1:4022/snapshot?account=0.0.2",
+        "paymentTxId": "0.0.7162784@1785506508.721781317",
+        "sellerDid": "did:hedera:testnet:CBXdezVPaZpgHKJYy22oMqnLoCAEBAjmjK69jUyTMkGY_0.0.9857224",
+        "buyerDid": "did:hedera:testnet:7XbL8uRTrCGStAQBmxSxNJWPfeUskXhDRi1dsBXNMwvt_0.0.9857222",
+        "attesterDid": "did:hedera:testnet:FUsRseUzYKD8x5qepSUQXR3YZBQpPCDAnvLkp2LZQ7CE_0.0.9857227",
+        "delivered": false,
+        "reason": "claimed balance 32,995,190,478.63337541 HBAR, mirror node reports 34,015,660,287.25085876 HBAR",
+        "responseSha256": "ee683e44b04406e9a9181e2d4f663638872f01f690eea44a23cc4a647f2cdc9a",
+        "attestedAt": "2026-07-31T14:02:00.656Z"
+      },
+      "signature": "41403a0b827274efdc2123205e2c19031349e8517f6468d9584ebeebb414ad1bcb22f372b253cd4946ee0fe6585bb53b3b1b5ad25e1dce4811829204105d550c",
+      "attesterPublicKey": "d72751a31561b245127c1f293f8497cd77037fd34e7fbea80391eed64d09c09b"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "x402-hedera-delivery-attestation",
+  "version": "0.1.0",
+  "private": false,
+  "license": "Apache-2.0",
+  "description": "An agent buys a Hedera account snapshot from a paid API over x402, and the delivery outcome is attested on Hedera Consensus Service. Payment settling and the resource arriving are different events.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "postinstall": "patch-package",
+    "start": "tsx scripts/start.ts",
+    "setup": "tsx scripts/check-account.ts",
+    "netcheck": "tsx scripts/netcheck.ts",
+    "smoke": "tsx scripts/smoke.ts",
+    "bootstrap": "tsx scripts/bootstrap.ts",
+    "attestations": "tsx scripts/read-attestations.ts",
+    "viewer": "tsx scripts/viewer.ts",
+    "seller:honest": "tsx src/seller/honest.ts",
+    "seller:dishonest": "tsx src/seller/dishonest.ts",
+    "buy": "tsx src/buyer/cli.ts",
+    "demo": "tsx src/demo.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "test:coverage": "vitest run --coverage.enabled --coverage.provider=v8 --coverage.include='src/**' --coverage.reporter=text --coverage.reporter=html"
+  },
+  "dependencies": {
+    "@hiero-did-sdk/registrar": "^0.2.1",
+    "@hiero-did-sdk/resolver": "^0.2.1",
+    "@hiero-ledger/sdk": "2.85.0",
+    "@x402/core": "2.20.0",
+    "@x402/hedera": "2.20.0",
+    "dotenv": "16.4.7",
+    "zod": "3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "@vitest/coverage-v8": "^2.1.8",
+    "patch-package": "^8.0.1",
+    "tsx": "4.19.2",
+    "typescript": "5.7.2",
+    "vitest": "2.1.8"
+  },
+  "overrides": {
+    "ethers": "^6.17.0"
+  }
+}
