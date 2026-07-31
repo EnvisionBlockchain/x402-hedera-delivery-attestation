@@ -95,7 +95,7 @@ around whatever audio it finds.
 
 **Narration.**
 
-> The repository is small enough to read in one sitting, and laid out along the argument. Seller is the gate plus two handlers. Buyer is the paying agent and its spend cap. Verifier is the part that matters: re-derive, decide, attest. The decision logic is a pure function with no network in it, which is why it can be tested exhaustively. Three hundred and seventeen tests run in C I on every change.
+> The repository is small enough to read in one sitting, and laid out along the argument. Seller is the gate plus two handlers. Buyer is the paying agent and its spend cap. Verifier is the part that matters: re-derive, decide, attest. The decision logic is a pure function with no network in it, which is why it can be tested exhaustively. Three hundred and sixteen tests run in C I on every change.
 
 ---
 

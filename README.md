@@ -42,7 +42,7 @@ on Hedera. Only one seller delivers what was bought.
 Everything above the final row is identical. Nothing available *before* paying
 separates them. Only the attestation layer can.
 
-### Watch it (4:51)
+### Watch it (4:52)
 
 [**docs/media/demo-video.mp4**](docs/media/demo-video.mp4) walks the thesis, the
 code, a live run, how an agent buys through the skill, and independent

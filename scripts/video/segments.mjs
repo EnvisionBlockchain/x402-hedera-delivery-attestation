@@ -142,7 +142,7 @@ export const SEGMENTS = [
       argument. Seller is the gate plus two handlers. Buyer is the paying agent and its spend cap.
       Verifier is the part that matters: re-derive, decide, attest.
       The decision logic is a pure function with no network in it, which is why it can be tested
-      exhaustively. Three hundred and seventeen tests run in C I on every change.`,
+      exhaustively. Three hundred and sixteen tests run in C I on every change.`,
     slide: {
       layout: "tree",
       title: "Where everything lives",
@@ -157,7 +157,7 @@ export const SEGMENTS = [
         { path: "src/verifier/attest.ts", label: "src/verifier/attest.ts", what: "Signs the verdict onto Consensus Service" },
         { path: "skills/x402-hedera-buyer", label: "skills/x402-hedera-buyer/", what: "The buyer, packaged as an agent skill" },
         { path: "viewer/index.html", label: "viewer/index.html", what: "Independent reader. One file, no backend" },
-        { path: "test", label: "test/", what: "317 tests, run in CI on every change" },
+        { path: "test", label: "test/", what: "316 tests, run in CI on every change" },
       ],
       note: "check.ts makes no network calls. That is why every branch of the decision is testable.",
     },
